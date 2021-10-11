@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Reservation Application </title>
+        <link rel="stylesheet" href = "style.css">
+            <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <script src ="main.js"> </script>
+        <body>
+            <div class ="container">
+                <form id = "res_form" method="GET" action="">
+                    <div class="title"><h2> Reservation Form </h2></div>
+                        <div class="content">  
+                            <div>
+                                Full Name <input type="text" placeholder="Enter your Fullname" name="FullName" id="name">
+                            </div> 
+                            
+                            <div>
+                                Gender <select id="gender">
+                                        <option value="Male" selected> Male </option>
+                                        <option value="Female" selected> Female </option>
+                                        <option value="Gender" selected> --Select Gender-- </option>
+                                </select>
+                            </div>
+                            <div>
+                                Civil Status <select id="status">
+                                        <option value="Single" selected> Single </option>
+                                        <option value="Married" selected> Married </option>
+                                        <option value="Divorced" selected> Divorced </option>
+                                        <option value="Separated" selected> Separated </option>
+                                        <option value="Widowed" selected> Widowed </option>
+                                        <option value="----------------" selected> ---------------- </option>
+                                </select>
+                                    </div>
+                            <div>
+                                Email <input type="text" placeholder="Enter your Email" name ="Email" id = "email">
+                                </div>
+                            <div>
+                                Barangay <input type="text" placeholder="Enter your Barangay" name ="Address" id = "barangay">
+                                </div>
+                            <div>
+                                City/Municipality <input type="text" placeholder="Enter your City" name ="City" id = "city">
+                                </div>
+                            <div>
+                                Province <input type="text" placeholder="Enter your Province" name ="Province" id = "province">
+                                </div>
+                            <div>
+                                Country <input type="text" placeholder="Enter your Country" name ="Country" id = "country">
+                                </div>
+                            <div>
+                                Date of Reservation <input id = "date" type="date" name ="Date"  min="01-01-2021"  id = "date" max="12-12-2040">
+                                </div>
+                            <div>
+                            Time of Reservation <input id = "time" type ="time" name ="Time" id = "time" min="00" max="60">
+                                </div>
+                            <div>
+                                <button onclick="res_function()"> Submit Reservation </button>
+                                </div>
+                    </div>          
+            </div>
+            </form>
+        </body>        
+    </head>
+</html>
